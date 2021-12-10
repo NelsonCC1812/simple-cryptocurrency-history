@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Graph</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+            <h1>App for HPI</h1>
+            <p>Here you have an interactive graph</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+      
+          <div class="col-md-3">
+            <div class="container"><div class="row"><h5 style="margin-right: 5px;">From:</h5><input type="date" min="2018-01-01" ></div></div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="container"><div class="row"><h5  style="margin-right: 5px">To:</h5><input type="date" min="2018-01-01" max="2020-02-10"></div></div>
+          </div>
+
+          <div class="col-md-3">
+            <select name="currency" id="currency">
+                <option value="btc-bitcoin">BTC</option>
+                <option value="eth-ethereum">ETH</option>
+                <option value="bnb-binance-coin">BNB</option>
+              </select>
+          </div>
+
+            <div class="col-md-3">
+                <h6 id="max"></h6>
+                <h6 id="min"></h6>
+            </div>
+
+            
+        </div>
+      </div>
+      
+      <h6 id="error"></h6>
+      
+      <canvas id="myChart" style="height: 250px;"></canvas>
+      
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="scripts/script.js"></script>
+</html>

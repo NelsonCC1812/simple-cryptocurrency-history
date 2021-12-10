@@ -1,0 +1,16 @@
+#header{
+    display: flex;
+    margin: 0 auto;
+}
+
+#error{
+    color: rgb(165, 4, 4);
+}
+
+#max{
+    color: green;
+}
+
+#min{
+    color: red;
+}
