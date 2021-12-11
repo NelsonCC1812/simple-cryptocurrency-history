@@ -7,9 +7,9 @@ const min = document.getElementById("min")
 
 let prices
 
-addCurrencyOptions()
 setStartDate()
 setChart()
+addCurrencyOptions()
 setListeners()
 
 async function addCurrencyOptions(){
