@@ -7,9 +7,26 @@ const min = document.getElementById("min")
 
 let prices
 
+addCurrencyOptions()
 setStartDate()
 setChart()
 setListeners()
+
+async function addCurrencyOptions(){
+
+  const [,...data] = await (await fetch(`https://api.coinpaprika.com/v1/coins`)).json()
+
+  let option
+  data.forEach(elm => {
+    
+    option = document.createElement('option')
+    option.value = elm.id
+    option.innerText = elm.name
+
+    currency.appendChild(option)
+  })
+       
+}
 
 function setStartDate(){
     const date = new Date()
@@ -38,7 +55,10 @@ function setChart() {
         .then(res => res.json())
         .then(data => printChart(data))
         .then(() => setMaxMin())
-        .catch(err => console.log('Ha habido un error ', err))
+        .catch(err =>{
+            error.innerText = "Ha habido un error"
+            console.log('Ha habido un error ', err)
+        })
     }
 }
 
