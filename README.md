@@ -1,5 +1,7 @@
 # Crypto currency historical app
 
+***To see the page please [click here](https://nelsoncc1812.github.io/simple-cryptocurrency-history/)***
+
 This small app takes crypto coins from an external API and let you choose between then.
 
 * You can choose a start and a final date (from - to) to select the period.
