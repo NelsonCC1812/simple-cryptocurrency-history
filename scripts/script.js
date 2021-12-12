@@ -38,7 +38,7 @@ function setStartDate(){
 }
 
 function formatDate(date){
-    return `${date.getFullYear()}-${date.getDate()<9?"0" + date.getMonth()+1: date.getMonth()+1}-${date.getDay()<10?"0"+date.getDay():date.getDay()}`
+    return `${date.getFullYear()}-${date.getDate()<9?"0" + date.getMonth()+1: date.getMonth()+1}-${date.getDate()<10?"0"+date.getDate():date.getDate()}`
 }
 
 function setChart() {
