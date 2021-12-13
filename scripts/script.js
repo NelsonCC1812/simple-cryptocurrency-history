@@ -33,6 +33,7 @@ function setStartDate(){
 
     
     inputs[1].value = formatDate(date)
+    input[1].max = formatDate(date)
     date.setTime(date.getTime()-2629800000)
     inputs[0].value = formatDate(date)
 }
